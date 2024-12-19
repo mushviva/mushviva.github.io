@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://localhost:1313/mushviva/mushviva.github.io/sitemap.xml
