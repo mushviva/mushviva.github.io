@@ -9,7 +9,7 @@ import MarkdownIt from 'markdown-it'
 const DOMAIN = 'https://guavaswing.com'
 const AUTHOR = {
   name: 'mushviva',
-  email: 'gthfd@gmail.com',
+  email: 'gthefd@gmail.com',
   link: DOMAIN,
 }
 const markdown = MarkdownIt({
