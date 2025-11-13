@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://guavaswing.com/</id>
+    <title>mushviva</title>
+    <updated>2025-11-13T12:36:19.820Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>mushviva</name>
+        <email>gthefd@gmail.com</email>
+        <uri>https://guavaswing.com</uri>
+    </author>
+    <link rel="alternate" href="https://guavaswing.com/"/>
+    <link rel="self" href="https://guavaswing.com/feed.atom"/>
+    <subtitle>mushviva' Blog</subtitle>
+    <logo>https://guavaswing.com/avatar.png</logo>
+    <icon>https://guavaswing.com/favicon.ico</icon>
+    <rights>CC BY-NC-SA 4.0 2025 © mushviva</rights>
+</feed>

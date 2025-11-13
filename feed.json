@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "mushviva",
+    "home_page_url": "https://guavaswing.com/",
+    "feed_url": "https://guavaswing.com/feed.json",
+    "description": "mushviva' Blog",
+    "icon": "https://guavaswing.com/avatar.png",
+    "author": {
+        "name": "mushviva",
+        "url": "https://guavaswing.com"
+    },
+    "items": []
+}
