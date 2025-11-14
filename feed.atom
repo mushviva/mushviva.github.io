@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guavaswing.com/</id>
     <title>mushviva</title>
-    <updated>2025-11-13T12:55:54.638Z</updated>
+    <updated>2025-11-14T00:52:33.182Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>mushviva</name>
@@ -15,4 +15,17 @@
     <logo>https://guavaswing.com/avatar.png</logo>
     <icon>https://guavaswing.com/favicon.ico</icon>
     <rights>CC BY-NC-SA 4.0 2025 © mushviva</rights>
+    <entry>
+        <title type="html"><![CDATA[The Evolution of Shiki v1.0]]></title>
+        <id>https://guavaswing.com/posts/evolution-of-shiki-v1</id>
+        <link href="https://guavaswing.com/posts/evolution-of-shiki-v1"/>
+        <updated>2024-03-11T12:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="https://nuxt.com/blog/shiki-v1">Go to nuxt.com and read the full article</a>.</p>
+]]></content>
+        <author>
+            <name>mushviva</name>
+            <email>gthefd@gmail.com</email>
+            <uri>https://guavaswing.com</uri>
+        </author>
+    </entry>
 </feed>

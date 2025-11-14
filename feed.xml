@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>mushviva</title>
         <link>https://guavaswing.com/</link>
         <description>mushviva' Blog</description>
-        <lastBuildDate>Thu, 13 Nov 2025 12:55:54 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 14 Nov 2025 00:52:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,5 +14,14 @@
         </image>
         <copyright>CC BY-NC-SA 4.0 2025 © mushviva</copyright>
         <atom:link href="https://guavaswing.com/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[The Evolution of Shiki v1.0]]></title>
+            <link>https://guavaswing.com/posts/evolution-of-shiki-v1</link>
+            <guid isPermaLink="true">https://guavaswing.com/posts/evolution-of-shiki-v1</guid>
+            <pubDate>Mon, 11 Mar 2024 12:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://nuxt.com/blog/shiki-v1">Go to nuxt.com and read the full article</a>.</p>
+]]></content:encoded>
+            <author>gthefd@gmail.com (mushviva)</author>
+        </item>
     </channel>
 </rss>
