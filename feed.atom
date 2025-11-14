@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guavaswing.com/</id>
     <title>mushviva</title>
-    <updated>2025-11-14T01:26:41.684Z</updated>
+    <updated>2025-11-14T02:50:14.167Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>mushviva</name>
@@ -16,11 +16,526 @@
     <icon>https://guavaswing.com/favicon.ico</icon>
     <rights>CC BY-NC-SA 4.0 2025 © mushviva</rights>
     <entry>
+        <title type="html"><![CDATA[探索 Vue 3 的 Composition API]]></title>
+        <id>https://guavaswing.com/posts/first-blog</id>
+        <link href="https://guavaswing.com/posts/first-blog"/>
+        <updated>2025-11-13T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[一篇关于如何使用 Vue 3 Composition API 提升代码可维护性的文章。]]></summary>
+        <content type="html"><![CDATA[<p>Vue 3 的 Composition API 带来了更灵活、更强大的组件逻辑组织方式。</p>
+<h2>为什么选择 Composition API？</h2>
+<p>在大型应用中，Options API 可能会导致组件逻辑分散在不同的选项（data, methods, computed）中，难以阅读和维护。</p>
+<p>Composition API 通过 <code>setup</code> 函数，让我们能够将相关的逻辑代码组织在一起。</p>
+<pre><code class="language-vue">&lt;script setup&gt;
+import { computed, ref } from 'vue'
+
+// 计数器逻辑
+const count = ref(0)
+function increment() {
+  count.value++
+}
+
+// 计算属性
+const doubleCount = computed(() =&gt; count.value * 2)
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;div&gt;
+    &lt;button @click=&quot;increment&quot;&gt;
+      Count: {{ count }}
+    &lt;/button&gt;
+    &lt;p&gt;Double: {{ doubleCount }}&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+]]></content>
+        <author>
+            <name>mushviva</name>
+            <email>gthefd@gmail.com</email>
+            <uri>https://guavaswing.com</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我的第一篇文章]]></title>
+        <id>https://guavaswing.com/posts/test</id>
+        <link href="https://guavaswing.com/posts/test"/>
+        <updated>2025-11-04T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>这里写正文内容，可以使用 Markdown 语法。</p>
+]]></content>
+        <author>
+            <name>mushviva</name>
+            <email>gthefd@gmail.com</email>
+            <uri>https://guavaswing.com</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[周报 #94 - 生活的界限与真实感]]></title>
+        <id>https://guavaswing.com/posts/weekly_review_94</id>
+        <link href="https://guavaswing.com/posts/weekly_review_94"/>
+        <updated>2025-05-19T01:03:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>前言</h2>
+<p><img src="https://image.pseudoyu.com/images/weekly_review_94.png" alt="weekly_review_94"></p>
+<p>本篇是对 <code>2025-04-28</code> 到 <code>2025-05-04</code> 这周生活的记录与思考。</p>
+<p>这周是五一，久违的长假，放下了疲惫与焦虑，“摆烂”地享受了几天，看剧、运动、招待朋友，发现似乎更能找回一些生活的节奏；也补了 Rust 和 SwiftUI 的课程，重构了之前的项目；还有很多有意思的事。</p>
+<h2>生活的界限与真实感</h2>
+<h3>界限</h3>
+<p><img src="https://image.pseudoyu.com/images/severance_post.jpg" alt="severance_post"></p>
+<p>我时常觉得自己有一根弦一直绷着，并不是很具象的来自工作或是生活的什么压力，而是一种源自内心的焦虑，例如有一个完整的周末，我似乎很难真正放松下来打一天游戏（即使我真的很想把《宝可梦朱/紫》通关），给自己安排了许多“正”事，却又会因为学习或是目标达成不尽人意而进入自责的循环。</p>
+<p>这个五一假期却有了一些例外。假期前我依然给自己安排了许多学习、工作，但因为沉迷看一部新韩剧《苦尽柑来遇见你》和玩《双人成行》而“虚度”了好几个下午，但整个人却似乎融化在了这种舒适的日常中，搁置了那些不良的情绪，只是享受其中。</p>
+<p>似乎很久没有这样的时候了，即使只是“在假日休息”这样天经地义又简单的事。</p>
+<p>在看《人生切割术》的时候我也常常在想，我现在的生活有时还常常不如剧中那样通过一部电梯来彻底地割离工作与生活，甚至有些羡慕。不由得也开始反思自己是否真的需要填满这些时间，匆匆忙忙地奔波在一项项任务中，模糊了生活的界限。</p>
+<p>而对于远程办公已经近两年的我来说，这种界限并不是一个具体的上下班的时间节点所切分的时间片段，而是一种心态上的定义或是掌控感，让自己不再被这些具体的一项项事务裹挟着进入日复一日的循环。</p>
+<h3>真实感</h3>
+<p><img src="https://image.pseudoyu.com/images/DSCF0710.jpg" alt="DSCF0710"></p>
+<p>最近工作内容是并不熟悉的技术栈，常常因为代码写不出来/焦虑而熬夜，甚至也有一天因为夜里开会而吵醒了学姐，持续了两周后有些消耗，但似乎处在一个无解的状态里，确实是需要投入这些时间去学习/完成这些工作，却又由于这些被占据的时间与随之而来的情绪而压垮了仅剩的一些生活的空间。</p>
+<p><img src="https://image.pseudoyu.com/images/DSCF0731.jpg" alt="DSCF0731"></p>
+<p>刚好周五同事 Ares 和 Innei 来家里作客，中午我在家里做了牛排简餐，傍晚一起去天目里拍照，交流着相机、镜头，驻足于配色好看的摊位、与对面同样拿着相机在四处拍的陌生人拿着相机对狙，纯粹的快乐。</p>
+<p><img src="https://image.pseudoyu.com/images/i_m_still_here.jpg" alt="i_m_still_here"></p>
+<p><img src="https://image.pseudoyu.com/images/movie_threater.jpg" alt="movie_threater"></p>
+<p>晚上又和学姐去看了一部电影「I'm Still Here」，在一家可以一边吃东西一边观影的影院，很惬意，整个周末也似乎因为着短短的几个小时而延长了，变得充实而真切。</p>
+<p>或许有时候出去走走，去触碰一下窗外的雨滴，感受一下空气的流动和温度，就能为生活注入一些真实感。</p>
+<h2>苦尽柑来遇见你</h2>
+<p><img src="https://image.pseudoyu.com/images/kujinganlai.jpg" alt="kujinganlai"></p>
+<p>这个假期花了几天时间追完了这部新出的韩剧，原本只是每天吃饭的时候看下，两集之后就有些上头，看完后有些意犹未尽和怅然，似乎陪伴着他们走过了一生，他们之间的爱情自不必多言，其中更打动我的还有三代人之间的情感传递与循环，似乎常常也会落入同样的命运选择中，却又由于根植在生命中的来自上一代的传承而有一些微妙的不同。</p>
+<p>之前就一直很喜欢《请回答 1988》和《老友记》这类更偏群像的讲述人生某个阶段琐碎日常与情感的剧集，或许 P5R 这类游戏也是，我期待从中找到一些陪伴感，他们也常常会在生活的许多偶尔的阶段里给予我前行或是回望的勇气。</p>
+<h2>有趣的事与物</h2>
+<h3>输入</h3>
+<p>虽然大部分有意思的输入会在 「<a href="https://t.me/s/pseudoyulife">Yu's Life</a>」 Telegram 频道里自动同步，不过还是挑选一部分在这里列举一下，感觉更像一个 newsletter 了。</p>
+<p>我把 Telegram Channel 消息作为内容源搭建了一个微博客 —— 「<a href="https://daily.pseudoyu.com/">daily.pseudoyu.com</a>」，可以更方便浏览了。</p>
+<h3>播客</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=GyabC5ZGRFs">【podcast】S1E8.5 - 寫部落格是一件很酷的事情 !</a>，基于 Anthony Fu 博客开源项目改版自己个人网站的事居然成为了这一期播客的话题，有一种奇妙的感觉哈哈。</li>
+</ul>
+<h4>收藏</h4>
+<ul>
+<li><a href="https://github.com/TakWolf/fusion-pixel-font">GitHub - TakWolf/fusion-pixel-font: 开源的泛中日韩像素字体，黑体无衬线风格，支持 8、10 和 12 像素</a></li>
+<li><a href="https://github.com/gonzalezreal/swift-markdown-ui">GitHub - gonzalezreal/swift-markdown-ui: A SwiftUI markdown renderer for iOS and macOS</a></li>
+<li><a href="https://github.com/Lakr233/Litext">GitHub - Lakr233/Litext</a></li>
+<li><a href="https://github.com/runjuu/InputSourcePro">GitHub - runjuu/InputSourcePro</a></li>
+</ul>
+<h4>文章</h4>
+<ul>
+<li><a href="https://www.raycast.com/blog/how-raycast-api-extensions-work">How the Raycast API and extensions work</a>，raycast 的体验真的甩同类 Alfred 已经太远了，解读技术实现的文章也很清晰。</li>
+<li><a href="https://blog.solazy.me/20250501/">我的三天心动原则</a>，我之前看评测很心动大疆的一个无人机，激情下单，但发现到手后忙一些事三天都没空拆开快递，想到以前真正想要的东西都会一天刷三十遍快递去驿站自己取的，于是就退货了。</li>
+</ul>
+<h4>视频</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=GAYkneB2ZXo">my two notebook system to stop infinite scrolling</a></li>
+<li><a href="https://www.bilibili.com/video/BV12BGvz4EZk">花 10 万元，给 B 站 UP 主办了个展！</a></li>
+<li><a href="https://www.bilibili.com/video/BV1X1G1zaEtu">在生活的各种“空间”里，学会不退让。</a></li>
+</ul>
+<h4>剧集</h4>
+<ul>
+<li><a href="https://movie.douban.com/subject/36053256/"><strong>苦尽柑来遇见你</strong></a>，近几年最喜欢的剧了！！！有点找回了看《请回答 1988》的感受，但由于故事更完整，看着看着就像是陪她们度过了整个人生，有好几个地方都看哭了。</li>
+<li><a href="https://movie.douban.com/subject/36221305/"><strong>最后生还者 第二季</strong></a>，非游戏党，看完第一季印象比较深，追一下。</li>
+<li><a href="https://movie.douban.com/subject/26415434/"><strong>雷普利</strong></a>，剧情虽然没多少悬疑的部分，但节奏很棒，也好喜欢这部的光影和意大利人特有的松弛感，想去。</li>
+</ul>
+]]></content>
+        <author>
+            <name>mushviva</name>
+            <email>gthefd@gmail.com</email>
+            <uri>https://guavaswing.com</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[周报 #82 - Brand New Year 与写日记]]></title>
+        <id>https://guavaswing.com/posts/weekly_review_82</id>
+        <link href="https://guavaswing.com/posts/weekly_review_82"/>
+        <updated>2025-01-06T01:16:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>前言</h2>
+<p><img src="https://image.pseudoyu.com/images/weekly_review_82.png" alt="weekly_review_82"></p>
+<p>本篇是对 <code>2024-12-29</code> 到 <code>2025-01-05</code> 这周生活的记录与思考。</p>
+<p>2025 的第一周似乎也因为更换了年份而被赋予了特殊意义。更多计划一些习惯养成，用纸笔做日程管理，也开始在本子上写日记，记录一些零碎的生活思考；给父母进行了一场约拍，留下了在杭州的点滴记忆；跟学姐一起在 Switch 上玩「马里奥赛车八」和「双人成行」，很放松；还有很多有意思的事。</p>
+<h2>Brand New Year</h2>
+<p>今年也按照惯例写了年终总结，说是惯例，生日的总结确实是从 2022 年开始就坚持了下来，去年年末却因为状态确实不太好而搁置了，不知不觉一年也就这样过去了。而今年虽也匆忙，但总还是想着自律一些，想给未来的自己留下些什么。</p>
+<p>写完后其实有些丧丧的，分了几个小主题来陈述一些思考，最终还稍稍上了点价值，然而实际情绪要低落得多。我应该已经算是努力了吧，工作、技术提升、side project 都有在推进，有更多陪家人，婚礼也在事无巨细地筹备。</p>
+<p>我有努力平衡好这一切，但似乎还是很难都做好，甚至对短视频深恶痛绝的自己在几个夜晚毫无目的地随着 B 站的算法推荐刷到睡去，早早关闭朋友圈的自己有时候也会无意识地刷推，终究还是向虚拟世界索取了一些东西。</p>
+<p>元旦的第一天就并不算很顺，车子刮了一次，还莫名其妙地因为在等待前车堵着的时候被后面暴躁的司机莫名地骂了，自诩情绪稳定的自己在一整天的积压之下也还波及到了学姐，真是糟糕的自己。</p>
+<p><img src="https://image.pseudoyu.com/images/2024_pics.png" alt="2024_pics"></p>
+<p>晚上甚至有几个瞬间悲观地想要破罐破摔，新的一年大概也就像这样了吧，晚上学姐发了几十张她相册里的照片，说「这都是 2024 年的你」，温暖而感动。</p>
+<p>其实 2024 年也尝试和完成了很多有意思的事：</p>
+<ul>
+<li>坚持了很久的私教健身</li>
+<li>体验了油画和油画棒，画了自己现在的这个头像和一些生活碎片</li>
+<li>去巴厘岛旅行，在库塔体验了冲浪</li>
+<li>家庭旅行，带爸妈、妹妹去内蒙玩/见学姐父母</li>
+<li>在北京鼓起勇气约了偶像 Randy 见面，后续还一起做好多好玩的事</li>
+<li>在 Adventure X、ETH Shenzhen、OSPP 等很多活动中担任导师，还在清迈 Invsible Garden 中第一次尝试为期一个月的英文讲课，还认识了一些有趣的其他 mentor</li>
+<li>在爸爸的汽车修理厂里墙绘</li>
+<li>重新捡起了滑板的爱好</li>
+<li>学会了驾照，去杭州周边的一些地方以及南京自驾游</li>
+<li>2024 年 9 月开始坚持（并不那么严格的）素食，也坚持了一个多季度了</li>
+<li>和学姐去清迈、曼谷，第一次体验了瑜伽、打坐，还去看了日出</li>
+<li>一起回到了香港，见到了对彼此都重要的一些朋友老师</li>
+<li>五音不全的自己也和学姐一起报名了声乐课，学习了方大同的「特别的人」、张信哲/刘嘉玲的「有一点动心」，正在学李健的「假如爱有天意」</li>
+<li>买了新富士相机，给父母、妹妹在小河公园约拍</li>
+<li>求婚、领证并筹备婚礼</li>
+</ul>
+<p>原来细数这一年也做了很多有意思的事，很多事都是第一次尝试、是一年前的自己完全想象不到会去做的，以及，几乎每一件事，都有学姐在身旁。</p>
+<p>在已经到来的 brand new year 中，希望自己也能继续前进。</p>
+<h2>日记</h2>
+<p>我是一个非常电子化的人，之前折腾了很久的 Notion、Logseq、Obsidian、Apple Notes 还有 Things 等等软件，也尝试在 Notion 上每天写日记，但是总感觉非常难坚持下来，或是写的内容回头来看总是形式大于内容。</p>
+<p>最近在看了「<a href="https://www.youtube.com/watch?v=OmyfB513E1s">A notebook to save you from infinite scrolling.</a>」这个 YouTube 视频后开始重新思考这个问题，刚好又在「加谬手记」中读到了他对自己写记录制定的规则：</p>
+<blockquote>
+<p>规律记录，而且不准多话。持之以恒，专心致志，不为任何外在眼光或满足自身虚荣而书写，并要专注于身（行为）心（思考）之修养并在两者间取得平衡。</p>
+</blockquote>
+<p>我也有尝试过在 Telegram Channel 中更新每日一些细碎想法并每周组织成周报，坚持了一周多发现一旦心理上设定为「write in public」后，写下的东西就多了一些矫饰，会多一些美化而很难展示当下的两面性，在回顾时又需要花额外的经历从这些文字中剥离出更真实底层的念头。</p>
+<p>学姐倒是一个常写日记的人，在她之前的一篇博文「<a href="https://www.boyilu.com/lost-desire-to-express">失去的表达欲</a>」中也表达过类似的想法：</p>
+<blockquote>
+<p>也因为自己感受到的世界因日增的思考体悟而不断移步易景，所以表达欲渐渐丧失，总觉得自己能讲述的太浅薄，有些结论太武断。此外，日记倒是常写，但如果写博客，就难免会有想象中的读者。如同日常在家中横躺竖卧，偶尔也可能邋里邋遢，但客人到访难免收拾一番，展示美好景象。一旦开始公开表达，就难免会矫饰，我不喜自己可能会透露出的虚荣或自负。（就在此刻，我的自负在于标榜自己是个不爱标榜自己和不自负的人。）（就在上一刻，我的自负在于自己虽然自负，但标榜自己并不以自负为荣。）</p>
+</blockquote>
+<p>虽开始写作就难免需要克服这些障碍，但日记这种形式还是能够少一些镣铐，无需顾虑太多。于是新年多了两项 daily routines，一本是日记，记录一些日常的人事物和思考；另一本则是日程表，作为 Life Tracker 来记录一些习惯养成、重要事项/节点与日常的一些待办或是 random thoughts。</p>
+<p><img src="https://image.pseudoyu.com/images/journal_2025_project.png" alt="journal_2025_project"></p>
+<p>日程本子很有意思，有画格子记录自己的一些习惯养成，就像福格行为模型中叙述的一样，只是多了一点点仪式感或许就能够让自己整个状态都变得不一样；而日记从最开始写得长长的冗杂的想法，到现在已经可以几句话讲出最重要的一些思考，更真实随意，也少了一些“写下来”的心智负担。</p>
+<p>于我来说，日程本和日记更侧重于记录与回溯，日常的工作与笔记还是会在电脑上用 Obsidian 与 Things 完成，而每周末的周报则像是在上述的这些记录之上再进行的一些整理和呈现。</p>
+<h2>有趣的事与物</h2>
+<h3>输入</h3>
+<p>虽然大部分有意思的输入会在 「<a href="https://t.me/s/pseudoyulife">Yu's Life</a>」 Telegram 频道里自动同步，不过还是挑选一部分在这里列举一下，感觉更像一个 newsletter 了。并且把 Telegram Channel 消息作为内容源搭建了一个微博客 —— 「<a href="https://daily.pseudoyu.com/">daily.pseudoyu.com</a>」，可以更方便浏览了。</p>
+<h4>书籍</h4>
+<ul>
+<li><a href="https://book.douban.com/subject/36707112/"><strong>控糖革命</strong></a>，在看。</li>
+<li><a href="https://book.douban.com/subject/34802764/"><strong>加缪手记</strong></a>，看看作家的日记写啥</li>
+</ul>
+<h4>文章</h4>
+<ul>
+<li><a href="https://polebug.github.io/2024/12/18/law_of_attraction/">读《吸引力法则：如何利用心理暗示实现愿望》的记录与思考</a></li>
+<li><a href="https://polebug.github.io/2024/12/28/2024/">2024：无为而治</a></li>
+<li><a href="https://blog.ursb.me/posts/weekly-28/">月刊（第 28 期）：AI 没有体验世界的能力</a></li>
+</ul>
+<h4>视频</h4>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1tkqJYiES1">1 个招牌能买 1 套房？霓虹灯为什么消失了</a></li>
+<li><a href="https://www.bilibili.com/video/BV1ht63YREAq">《 哈 利 波 特 与 中 国 麻 瓜 》</a></li>
+<li><a href="https://www.bilibili.com/video/BV1BcrFYqEF5">2024 年终观察（上）：大增长后的叙事空洞</a></li>
+<li><a href="https://www.bilibili.com/video/BV1dsB5YiEAL">去江浙沪垫底的旅游城市旅行，发现了躺平胜地？</a></li>
+<li><a href="https://www.bilibili.com/video/BV1SkrAYKEf9">我被困在了 2024 年 12 月 31 日。</a></li>
+</ul>
+<h4>剧集</h4>
+<ul>
+<li><a href="http://movie.douban.com/subject/35656342/"><strong>鱿鱼游戏 第二季</strong></a>，第一季倒也是就是下饭看了下，感觉第二季更加立不住了，反叛、反转都有些太意料之中了，人设也不是很立体</li>
+</ul>
+]]></content>
+        <author>
+            <name>mushviva</name>
+            <email>gthefd@gmail.com</email>
+            <uri>https://guavaswing.com</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[开源的心理建设]]></title>
+        <id>https://guavaswing.com/posts/mental-health-oss-zh</id>
+        <link href="https://guavaswing.com/posts/mental-health-oss-zh"/>
+        <updated>2024-03-16T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[这是我在开源之旅中对自己心理健康的一些感悟和思考]]></summary>
+        <content type="html"><![CDATA[<p>[[toc]]</p>
+<blockquote>
+<p><a href="/posts/mental-health-oss">English Version</a> ｜ 感谢 {@xxholly32} {@yyyanghj} 协助翻译</p>
+</blockquote>
+<blockquote>
+<p><strong>省流</strong>: 我目前状态良好，并没有要离开开源。尽管还有一些压力，但仍然在尝试并改进现状。感谢关心！</p>
+</blockquote>
+<p>今年是我开始做开源的第四年。说实话，我越来越频繁地感觉到许多事情超出我的能力范围。我仍然不确定自己是否曾经真正经历过 <a href="https://www.darlingdowns.health.qld.gov.au/about-us/our-stories/feature-articles/signs-you-might-be-experiencing-a-burnout-and-how-to-regain-balance-in-your-life#:~:text=Burnout%20is%20a%20state%20of,an%20increasing%20sense%20of%20hopelessness">burnout（职业倦怠）</a>，但我确实周期性地感受到生产力和积极性的起伏。</p>
+<p>这篇文章并不是一篇指南，也算不上是抱怨。它更像是我用来自我记录的个人日记。我只是觉得，如果能与你们分享这些内容，也许会很有意思。</p>
+<p>如果你正在经历职业倦怠或者感觉快要接近这个状态，我建议你休息一下、和其他人聊聊，并在必要时寻求专业帮助。此外，你也可以参考 <a href="https://opensource.guide/maintaining-balance-for-open-source-maintainers/">为开源维护者保持平衡</a> 这篇优质的文章。照顾好自己！</p>
+<p>现在，就让我聊聊我近期的一些零碎的思考吧。</p>
+<hr>
+<h3>措手不及</h3>
+<p>从某种意义上说，即使是今天，开源对我来说仍然是一个非常新且未知的领域。</p>
+<p>自从我开始学习编程和了解开源，我就一直梦想着成为一名全职的开源开发者。在大学期间，我怀着被开源社区认可的渴望，不断寻找自己能参与的有重大影响力的项目。突然之间，你会迎来一个转折点，你的项目可能会出乎意料地获得成功，或者被邀请加入一个重量级项目。在那一刻，所有的激动和随之而来的责任感突然涌上心头。几天后，当最初的兴奋感逐渐消散，你开始意识到这还意味着巨大的责任和许多你之前未曾考虑过的事情。虽然我在大学期间一直努力跻身开源界，但当我真正踏入这一领域时，才发现自己有多么的措手不及。</p>
+<p>关于开源有趣的一点是 <strong>你可能永远不会准备好</strong>。你可能会遇到棘手的技术问题，或者需要不断追赶新兴技术的脚步，但除了编码之外，还会有许多其他事情需要你去应对。你要成为 <strong>客服</strong> 去解答问题；成为 <strong>设计师</strong>、 <strong>作家</strong> 去编写一份精美的文档；成为 <strong>项目经理</strong> 确保项目正常推进；成为 <strong>团队领导</strong> 来接纳新的贡献者并保持团队的积极性；<strong>推广</strong> 你的作品；在大会上发表 <strong>演讲</strong>；等等。这些都是作为开源开发者的「额外影响」，不仅仅是代码，很多其他事情也会随之而来。</p>
+<p>对我来说，这是一个巨大的挑战。我是一个相当内向的人，我不擅长聊天或交谈。我在学校时，英语成绩很差，也没有说英文的自信。我非常怯场，即便只是在同学面前，我也会非常紧张。我想我也不喜欢团队管理，尽管我从未真正领导过一个团队 —— 有太多事情值得害怕。</p>
+<p>但现实并不会给你充足的时间去做好充足的准备（或者从另一方面来看，如果不迈出第一步，你可能永远不会准备妥当），随着项目的发展，你的职责也随之增加，你会被迫学习和适应。当它自然地成长为一个团队时，你就得学会沟通，学会领导。当有人邀请你做播客或者演讲时，他们不会等你三年时间来练习语言或演讲技巧 —— 你要么错过机会，要么就面对恐惧向前进。因为我对开源的热爱，我必须战胜自己、克服恐惧。</p>
+<p>这些事情可能看起来难以应对，但如果你逐一接受并克服这些挑战，你可能会慢慢发现，这些经历其实是相当有趣且充满回报的。事到如今，我非常感激曾经的这些机会，它们促使我走出舒适区，迫使我进步。在做开源的这四年里，尽管我在很多方面仍不尽完美，但我能够更加自信流利地说英语了；我在许多研讨会上演讲，有些会议的参与者甚至达到了数千人，每次演讲前，我仍然会感到非常紧张，但至少我不再害怕上台了。</p>
+<p>未来还有很多挑战和惊喜在等着我。我既感到忐忑不安，又充满期待。</p>
+<blockquote>
+<p>这里我很喜欢 <a href="https://music.163.com/#/song?id=1886366521"><span i-carbon-music /> Jony J 的《山脚》</a> 中所描述的感觉，有兴趣的话可以去听听。</p>
+</blockquote>
+<h3>「期望」</h3>
+<p>人类具有很强的适应能力。这驱使人类得以生存并不断进步，但同时，也让我们变得难以满足。</p>
+<p>当我开始我最初的几个开源项目时，我非常兴奋。我会不断刷新页面，急切地等待新的 issue、 pull request 和评论的出现。每一个 star 都会让我开心，我也会尽我所能去解决每一个 issue。我设定了诸如获得 100 颗 star、500 颗 star 等里程碑，每当达成这些目标时我都会为此庆祝。我仍然清楚地记得，当我向我的朋友介绍我的项目获得了几百颗星星而对这个世界产生了一些影响时，我是多么自豪。</p>
+<p>但一旦你达成了这些目标，事情就开始变得「理所当然」。随后，你将期望更多，设立更高的目标。到达某个时间点，我开始对 star 或下载量这类数字不再那么关心。这未必是件坏事，毕竟这并非是我们真正应该关注的指标，但我偶尔还是会怀念那些能从简单的事物中找到快乐的日子。</p>
+<p>我逐渐意识到，我们生活中的许多事情的经历与我们的 <strong>期望</strong> 有直接关系。在起步阶段，我们的预期不高，也相较容易实现。随着我们不断进步，站在更高的平台上时，我们开始抱有更高的期望。然而，这些期望往往不会按比例线性增长。当你拥有了 1000 颗 star 时，再增加 100 个 star 可能不会像最初什么都没有时那么令人深刻。当你有 1000 颗 star 时，你会寻找另外的 1000 颗，而仅仅 100 颗已经不能满足你了。这对我来说很奇怪，我不喜欢我自己的这种「生物本性」。</p>
+<p>我发现降低自己的期望，并对所拥有的一切心存感激，是保持快乐的一个有效方式。当你意识到自己无法不断实现一个又一个目标时，最好的出路就是停止追求更高的成就，暂时休息一下，欣赏周遭的景色 —— 你可能会发现自己其实已经达到了足够的高度。自从我开始不再过分关注得失后，我发现自己更乐于去尝试各种不同的想法，哪怕它们可能不会成功 —— 因为我对它们没有过高的期望，所以在我看来根本不存在「失败」这回事。如果它们中有一些最终获得了成功，那将成为一份不错的「惊喜」。</p>
+<blockquote>
+<p>如果你对此感兴趣，我在<a href="/posts/about-yak-shaving-zh">「关于 Yak Shaving」</a>一文中阐述了我的寻找想法的过程。</p>
+</blockquote>
+<h3>「自我期望」</h3>
+<p>期望不仅关乎我们所做的事情，同样也关乎我自己。当我对某个项目过分在意时，我常常会发现我对扮演「善良且友好的维护者」这一角色的自我期望过高。每当我看到别人批评我的项目，或是某个 bug 给人带来困扰，亦或是我没有及时回复 issue 等诸如此类的事情时，我会感到沮丧。这在那些广受欢迎的项目上，这种感觉尤为强烈，正因为我知道有许多人正依赖着它。这些对自己的期望也给我带来了相当大的压力。</p>
+<p>正如我在<a href="/posts/why-reproductions-are-required-zh">另一篇文章中提到的，维护者与用户的比例在开源项目中通常是不平衡的</a>。找到一个新的贡献者或团队成员非常困难，但由于开源天然免费，吸引更多用户却几乎没有门槛。</p>
+<p>开源软件通常是<a href="/posts/why-reproductions-are-required-zh#open-source-software-is-served-as-is"><strong>「以现状提供」</strong></a>的，这意味着维护者并<strong>没有义务</strong>为他人解决问题。我想这对维护者来说，也会是一个困难的思维转换，尤其是对于那些关心用户和社区的维护者。当我们收到新的 issue 时，很难置之不理。但从另一个角度来看，一个人的时间和精力是有限的。当工作量超出了一个人的能力时，设定优先级，优先关注最重要的事情是其实会更好的做法。</p>
+<p>我希望有人能在我最开始维护高流量的开源项目时告诉我这一点（在网上其实有不少很好的资源，比如<a href="https://opensource.guide/zh-hans/best-practices/">这篇文章</a>）—— 我花了很长时间才意识到，我不必做多完美，很多事情做不到也没有关系，而我应该找到自己的做事节奏。与其接收通知被动地处理，更适合我的其实是关闭通知，在自己适合的时间再去主动查看和处理 issues 和 pull request。</p>
+<p><strong>降低对自己的期望</strong> —— 没有人是完美的，也没有人是不会累的机器。不要让它们成为你的心理负担。保持健康和可持续的节奏，让自己保持快乐和积极性，长远来看会产生更多积极的影响。</p>
+<h3>当梦想成为工作</h3>
+<p>生活在自己的梦想中很棒，老实说，甚至是一种特权。但从现实角度来说，怀揣梦想与梦想成为现实生活之间存在着巨大的差异。梦想总是被理想化的，忽视了所有那些枯燥乏味的细节。我的梦想是成为一名全职的开源开发者。没错，独立工作、做自己喜欢的事情、自由安排时间、可以在任何地方工作、造福世界等等，这一切听起来都很美好。可是世界并没有这么简单。</p>
+<p>这与「把你的爱好变成工作」非常相似。它确实有很多好处，例如你会更加享受工作并且更有动力。但其实，这也伴随着许多义务和责任。当一个爱好变成一份工作时，你失去了选择什么时候做什么的自由。以前，你会把你的爱好作为工作后的放松，但现在，当你想通过爱好来放松时，它们反倒变成了工作。</p>
+<p>我很幸运，软件开发是一个广阔的领域，有很多不同的事情可以做。除了主要的开源项目维护之外，我有时会做一些小项目等等）来放松一下我的大脑（相对于主要项目的一种「放松」）。我也很喜欢玩独立游戏，同时我一直在考虑认真地开发一些游戏 —— 不过那是另外一个话题了 —— 至少现在，当我真的想远离代码时，我还有不少逃避的方法。</p>
+<p>可能是我太喜欢编程了，以至于我对这件事并没有强烈的感觉。对我而言，「工作」和「娱乐」的界限是相当模糊的。有时，一个最开始以娱乐为初衷的项目最终也可能演变成一个大家都依赖的重要项目。</p>
+<h3>速度、规模和品质</h3>
+<p>其实这个主题才是这是驱使我写这篇博客文章最初的原因。</p>
+<p>让我们从这个 <b important-text-hex-E3B65E>速度（Velocity）</b>、<b important-text-hex-D777B1>规模（Scope）</b>和<b important-text-hex-80BEDF> 品质（Quality）</b>的<a href="https://en.wikipedia.org/wiki/Project_management_triangle">「铁三角」</a>开始。 <br><span op50>(通常它们是品质/速度/成本，我在这里做了一些调整)</span></p>
+<p>通常，人们会说 - 在这三个因素中，你<strong>只能选择两个</strong>。如果你想更快地交付一个项目，你可能不得不在品质上做出妥协，或者缩减产品功能。而如果你想拥有一个高质量和功能丰富的产品，那么你可能需要牺牲交付速度，慢慢打磨出优质的成果。</p>
+<p>以我个人的标准，保持开源软件的高品质是我绝对不会妥协的准则。</p>
+<p>同时，保持一定的速度和惯性对我来说也非常重要。我的大部分动力来自于完成某件事后的成就感。若我能够创建迭代事物然后交付的反馈循环，我便能进入一种极佳的<a href="https://en.wikipedia.org/wiki/Flow_%28psychology%29">心流</a>状态中。</p>
+<p>因此，我通常选择<b important-text-hex-80BEDF>品质</b>和<b important-text-hex-E3B65E>速度</b>。起初，我的项目规模相当明确且较小。我设法在保持高品质的同时，快速交付，快速从社区中获得反馈。那时，我能够保持高效和积极性，持续推进这些项目。</p>
+<h3>范围</h3>
+<p>我「出乎意料地」保持了这种势头和速度相当长一段时间。我从 {i18n Ally} 和 {VueUse} 开始接触开源，自那以后，我加入了 Vue 和 Vite 团队。<strong>在 2021 年一年之中</strong>，我做出了 {Slidev} <span op75 text-sm>(2021 年 4 月)</span>、{UnoCSS} <span op75 text-sm>(2021 年 10 月)</span> 和 {Vitest} <span op75 text-sm>(2021 年 12 月)</span> --- 一切都进行得太顺利了，以至于我几乎没有意识到拥有更大规模的项目也是会有上限的。<br>
+从那时起，我继续「无知地」保持着这样的速度。我非常幸运能够遇到这些了不起的团队和社区，并从他们那里得到帮助：</p>
+<ul>
+<li>非常厉害的 {Nuxt} 团队 {@Atinux} {@danielroe} {@pi0}</li>
+<li>{@sheremet-va} {@AriPerkkio} 和 <a href="https://github.com/vitest-dev/vitest/graphs/contributors">Vitest 团队</a> 持续维护 {Vitest}</li>
+<li>{@chu121su12} {@zyyv} 和 <a href="https://github.com/unocss/unocss/graphs/contributors">UnoCSS 团队</a> 推动 {UnoCSS} 的很多改进</li>
+<li>{@okxiaoliang4} {@wheatjs} {@Alfred-Skyblue} {@Tahul} 和 <a href="https://vueuse.org/">VueUse 团队</a> 协助维护 {VueUse}</li>
+<li>{@sxzz} 管理 {Unplugin}</li>
+<li>{@KermanX} {@tonai} 在 {Slidev} 上推动了很多功能</li>
+<li>{@arashsheyda} 在 {Nuxt DevTools} 上提供了很多帮助</li>
+<li>{@shuuji3} {@Shinigami92} 为 {Elk} 做出了贡献</li>
+<li>{@patak-dev} {@sapphi-red} {@bluwy} 与出色的社区一起推动 Vite 前进</li>
+<li>{@userquin} 维护 {Vite PWA} 并几乎在所有项目中提供了帮助</li>
+<li>{@yyx990803}，我从他那学到了很多关于开源和决策的智慧</li>
+<li>...以及许多为开源做出贡献或通过赞助提供财务支持的人！</li>
+</ul>
+<p>很遗憾我没法一一列举出所有人，很多人也实际上在多个项目中有所交集。我想说的是，我并非孤军奋战，也不可能独自承担所有工作。我从社区和团队那里<strong>借到了很多帮助</strong>才能完成这些。我对此深表感激。除了<b important-text-hex-80BEDF>品质</b>和<b important-text-hex-E3B65E>速度</b>之外，似乎我也做到了不错的<b important-text-hex-D777B1>规模</b> —— 这看起来好像打破了铁三角的规则 —— 但实际上，在幕后的社区才是使这一切成为可能的「魔法」。</p>
+<h3>能力范围</h3>
+<p>维护多个高流量的开源项目所需的工作量实际上是巨大的。没有社区的帮助，我理应早就达到了我的极限。尽管社区给了我很多帮助，但是，沟通、协调以及切换上下文仍然需要耗费我大量精力。时间一长，我需要处理的事情越积越多，想要尝试的新点子和待改善的地方也不断增加。</p>
+<p>我想让这些项目保持活力并持续发展；我想写更多的博客文章来分享我的想法；我想做更多的演讲，去旅行，和很多人见见面；我想做更多的直播，因为我知道很多人还在催更；我必须得处理完这个事情，才能进行那个发布；我也想学法语；也想抽出更多的时间和家人在一起 —— 我的意思是，这或许就是生活。每个人都有自己的忧虑和责任，我并没有比其他人更加特别或忙碌。</p>
+<blockquote>
+<p><span font-serif font-bold op80 text-1.2rem>「但不知怎么的，好像有些东西，让我喘不过气。」</span></p>
+</blockquote>
+<p>我可能不愿意承认我潜在的倦怠（burnout）。这并不是因为我害怕，而是我不想轻言放弃，也不想被动地去应对。我知道该休息时就要休息，但称自己为「倦怠」并放弃对我来说像是一种「逃避责任」的「捷径」。我想找出「root cause」（根本原因），并尝试改善情况，而不仅仅是「workaround」（临时应对）。正如我们之前讨论的，对「期望」的转变，重新审视自己的「措手不及」和「自我期望」，是我在面对因不同原因的倦怠时的解决方案。通过自我调整和适应，我通常能在大约一周的时间内走出低谷，并继续前进。</p>
+<p>这次的情况有点不同，原因并不是我缺乏动力，而是因为我想做的事情太多了，而超出了我的能力范围。我开始思考，或许问题在于我总是抱着保持<b important-text-hex-E3B65E>速度</b>并且不断交付成果的这种期望，我对做得不够和做得不快感到焦虑。快速获得反馈是很棒，也很高效，但我可能因为太习惯于快速而变得有些容易没有耐心。这些因素叠加在一起，当我在做一些需要中长期努力的事情时，我变得容易感到焦虑。</p>
+<p>例如，写作。我不擅长写作，而且说实话我也并不喜欢写作。文档、博客文章、教程和演讲 —— 都需要耗费大量时间，但我又不得不做。当我在写作时，我很容易失心和分神，甚至中途放弃。所以我在 <a href="https://twitter.com/antfu7/status/1764397930796953823">Twitter 上询问了一下大家的做法</a>，得到了社区的很多很好的建议（你可以看看评论，说不定对你来说也会有所帮助）。我开始尝试放轻松，慢慢地做，试图转变我的思维，不急于求成，享受过程。你正在阅读的这篇博客大约花了我一周的时间来写（对我来说这是相当长的时间），分成了多个阶段来完成。这也帮助我重新审视和梳理我的思想和感受，实际上，把它们写下来也减轻了我不少的焦虑感。</p>
+<p>因此，我想我应该重新审视一下自己的能力范围和期望。我得明白并接受一个事实：我不可能始终以这样的速度前进，也没必要对自己过于严苛。放缓步伐，更细致地打磨每一个细节，也许我能在这个过程中找到别样的快乐和满足感。</p>
+<p>老实说，我并不确定我在这篇博客文章中想要表达什么 —— 也许只是简单地与你分享我的想法和感受。现在，我仍然感到相当大的压力。我仍在适应和努力寻找更好的处理方式。通过这一周的写作和与朋友交谈，我感觉好多了，我相信我会度过这个难关。这可能就像我们生活中的许多其他事情一样：我们并不总是有完美的解决方案，但我们必须得继续前进，找到出路。</p>
+<p>对于每个开源项目维护者来说，保持良好的心理健康是实现长期可持续发展的关键。在整个旅程中，我不认为会有一个绝对的「答案」或「解决方案」。这更像是一个持续的学习和适应的过程，需要我们自己去寻找适合我们自己的方法。</p>
+<h3>我很想听到你的想法</h3>
+<p><strong>感谢</strong>你能耐心地把我这杂乱冗长的心情读到最后！</p>
+<p>我知道我的观点一定是非常主观且具有偏差的。如果这篇文章引发了你的一些想法或感受，我<strong>很想听听你的想法或你的方法</strong>。你可以在这篇 <a href="https://twitter.com/antfu7/status/1768973757681438909">推文</a> 或 <a href="https://elk.zone/m.webtoo.ls/@antfu/112105304547243075">mastodon</a> 下评论，如果你更喜欢私下交流，也可以发邮件到 <a href="mailto:hi@antfu.me">hi@antfu.me</a>。</p>
+<p>另外，关于开源，还有很多方面值得讨论，而我在这篇文章里没有机会提及。<a href="https://twitter.com/kettanaito">Artem Zakharchenko</a> 写了一篇很有趣的文章 <a href="https://kettanaito.com/blog/the-dark-side-of-open-source">「开源的黑暗面」</a>，他从不同的角度和观点出发，我也非常认同。强烈推荐你也读一读。</p>
+<h3>致谢</h3>
+<p>最后，我要特别感谢我的女朋友 <a href="https://www.instagram.com/iiiiiiines__/">Inès</a>，她一直从始至终陪伴我度过每一个艰难的时刻。如果没有她的支持，我的开源之路也许不会走到今天。</p>
+<p>此外，感谢 {@patak-dev} 和 {@posva} 对这个话题的深入交流，他们真的帮了我很多，提供了很大的支持。</p>
+<p>还有正在阅读这篇文章的<strong>你</strong>，以及整个开源社区！我非常感激你们给我的所有帮助和支持。</p>
+<p>下次再见，保重！</p>
+]]></content>
+        <author>
+            <name>mushviva</name>
+            <email>gthefd@gmail.com</email>
+            <uri>https://guavaswing.com</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[The Evolution of Shiki v1.0]]></title>
         <id>https://guavaswing.com/posts/evolution-of-shiki-v1</id>
         <link href="https://guavaswing.com/posts/evolution-of-shiki-v1"/>
         <updated>2024-03-11T12:00:00.000Z</updated>
         <content type="html"><![CDATA[<p><a href="https://nuxt.com/blog/shiki-v1">Go to nuxt.com and read the full article</a>.</p>
+]]></content>
+        <author>
+            <name>mushviva</name>
+            <email>gthefd@gmail.com</email>
+            <uri>https://guavaswing.com</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Watch with @vue/reactivity]]></title>
+        <id>https://guavaswing.com/posts/watch-with-reactivity</id>
+        <link href="https://guavaswing.com/posts/watch-with-reactivity"/>
+        <updated>2020-09-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A brief intro of how it works and a guide to implementing the (missing) `watch` on your own.]]></summary>
+        <content type="html"><![CDATA[<p>[[toc]]</p>
+<p><a href="https://twitter.com/antfu7/status/1298667080804233221">As you probably know</a>, the things I excited most in Vue 3 are the <a href="https://v3.vuejs.org/guide/composition-api-introduction.html">Composition API</a> and the <a href="https://v3.vuejs.org/guide/reactivity.html">reactivity system</a>. With the Composition API we can reuse logics and states across components or even apps. What's better? The underhood reactivity system is decoupled from Vue, which means you can use it almost everywhere, even without UI.</p>
+<p>Here are some proof of concepts for using the reactivity system outside of Vue:</p>
+<ul>
+<li>
+<p><a href="https://github.com/yyx990803/vue-lit"><code>@vue/lit</code></a> is a minimal framework wrote by Evan combining <a href="https://github.com/vuejs/core/tree/main/packages/reactivity"><code>@vue/reactivity</code></a> and <a href="https://lit-html.polymer-project.org/"><code>lit-html</code></a>. It can run directly in browsers, with the almost identical experience as Vue Composition API.</p>
+</li>
+<li>
+<p><a href="https://github.com/antfu/reactivue"><code>ReactiVue</code></a> ports Vue Composition API to React. It also provides React's lifecycles in the Vue style.</p>
+</li>
+</ul>
+<p>Furthermore, you can even use Vue's libraries in them. Tested with <a href="https://github.com/antfu/vueuse"><code>VueUse</code></a> and <a href="https://github.com/posva/pinia"><code>pinia</code></a> in <a href="https://github.com/antfu/reactivue"><code>ReactiVue</code></a>, and they just work. You can find <a href="https://github.com/antfu/reactivue#using-vues-libraries">more details and examples here</a>.</p>
+<p>I am also experimenting more possibility of Vue reactivity in other scenarios, for example <a href="https://twitter.com/antfu7/status/1305313110903779330?s=20">reactive file system</a>, in a project called <code>tive</code>. It's currently a WIP private repo, but keep tuned, I get more to come 😉!</p>
+<h2>Understanding <code>@vue/reactivity</code></h2>
+<p>&quot;reactive objects&quot; returned by <code>ref()</code> or <code>reactive()</code> are actually <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">Proxies</a>. Those proxies will trigger some actions to track the changes on properties accessing or writing.</p>
+<p>For a simplified example,</p>
+<pre><code class="language-ts">function reactive(target) {
+  return new Proxy(target, {
+    get(target, prop, receiver) {
+      track(target, prop)
+      return Reflect.get(...arguments) // get the original data
+    },
+    set(target, key, value, receiver) {
+      trigger(target, key)
+      return Reflect.set(...arguments) // set the original data
+    }
+  })
+}
+
+const obj = reactive({
+  hello: 'world'
+})
+
+console.log(obj.hello) // `track()` get called
+obj.hello = 'vue' // `trigger()` get called
+</code></pre>
+<p>So in this way, vue can be notified when those properties get accessed or when they be modified.</p>
+<blockquote>
+<p>For more detailed explanations, check out the <a href="https://v3.vuejs.org/guide/reactivity.html#what-is-reactivity">official docs</a></p>
+</blockquote>
+<h3>Computed</h3>
+<p>Since we are able to know those events, we can start diving into the <code>computed</code> which is where the &quot;reactive&quot; magic start shining.</p>
+<p><code>computed</code> is like a getter that auto collects the reactive dependencies source and auto re-evaluate when they get changed.</p>
+<p>For example,</p>
+<pre><code class="language-ts">const counter = ref(1)
+const multiplier = ref(2)
+
+const result = computed(() =&gt; counter.value * multiplier.value)
+
+console.log(result.value) // 2
+counter.value += 1
+console.log(result.value) // 4
+</code></pre>
+<p>To know how the <code>computed</code> work, we need to dig into the lower level API <code>effect</code> first.</p>
+<h2>Effect</h2>
+<p><code>effect</code> is a new API introduced in Vue 3. Underneath, it's the engine powers the &quot;reactivity&quot; in <code>computed</code> and <code>watch</code>. For the most of the time, you don't need to directly use it. But knowing it well helps you understand the reactivity system much easier.</p>
+<p><code>effect</code> takes the first argument as the <code>getter</code> and a second argument for the options. The <code>getter</code> is the function that collect its deps on each run via their <code>track()</code> hooks. The field <code>scheduler</code> in options provides a way to invoke a custom function when the deps change.</p>
+<p>So basically, you can write a simple <code>computed</code> on your own like:</p>
+<pre><code class="language-ts">function computed(getter) {
+  let value
+  let dirty = true
+
+  const runner = effect(getter, {
+    lazy: true,
+    scheduler() {
+      dirty = true // deps changed
+    }
+  })
+
+  // return should be a `Ref` in real world, simplified here
+  return {
+    get value() {
+      if (dirty) {
+        value = runner() // re-evaluate
+        dirty = false
+      }
+      return value
+    }
+  }
+}
+</code></pre>
+<p>If you really interested in how it works in Vue, check out <a href="https://github.com/vuejs/core/blob/main/packages/reactivity/src/computed.ts">the source code here</a></p>
+<h2>Build yourself a <code>watch</code></h2>
+<p>We have done the most important APIs in <code>@vue/reactivity</code> now, which is <code>ref</code> <code>reactive</code> <code>effect</code> <code>computed</code>.</p>
+<p>Oh wait, we are missing the <code>watch</code> here!</p>
+<!-- eslint-skip -->
+<pre><code class="language-js">import { watch } from '@vue/reactivity' // does NOT exist!
+</code></pre>
+<p>If you take a look at Vue 3's source code, you will find that <code>watch</code> is actually <a href="https://github.com/vuejs/core/blob/main/packages/runtime-core/src/apiWatch.ts">implemented in <code>@vue/runtime-core</code></a>, along with the Vue's component model and lifecycles. The main reason for this is that <code>watch</code> is deep bound with the component's lifecycles (auto dispose, invalidate, etc.). But it shouldn't be the thing to keep you from using it outside of Vue.</p>
+<p>Let's implement the <code>watch</code> our own!</p>
+<h3>The Basic</h3>
+<p>Let's take a look at Vue's watch interface first</p>
+<pre><code class="language-ts">const count = ref(0)
+
+watch(
+  () =&gt; count.value,
+  (newValue) =&gt; {
+    console.log(`count changed to: ${newValue}!`)
+  }
+)
+
+count.value = 2
+// count changed to: 2!
+</code></pre>
+<p>With the knowledge of <code>effect</code>, it's quite straight forward to implement</p>
+<pre><code class="language-ts">function watch(getter, fn) {
+  const runner = effect(getter, {
+    lazy: true,
+    scheduler: fn
+  })
+
+  // a callback function is returned to stop the effect
+  return () =&gt; stop(runner)
+}
+</code></pre>
+<p>Watch is lazy by default in Vue, you can add the third options to give control to the users.</p>
+<h3>Watch for Ref</h3>
+<p>You may also notice that the Vue's <code>watch</code> also allows passing the ref directly to it.</p>
+<pre><code class="language-ts">watch(
+  count,
+  () =&gt; { /* onChanged */ }
+)
+</code></pre>
+<p>For that, just wrap it into a getter will do</p>
+<pre><code class="language-ts">function watch(source, fn) {
+  const getter = isRef(source)
+    ? () =&gt; source.value
+    : source
+
+  const runner = effect(getter, {
+    lazy: true,
+    scheduler: fn
+  })
+
+  return () =&gt; stop(runner)
+}
+</code></pre>
+<h3>Watch Deeply</h3>
+<p>One other great feature about <code>watch</code> is that it allows you to watch on deep changes.</p>
+<pre><code class="language-ts">const state = reactive({
+  info: {
+    name: 'Anthony',
+  }
+})
+
+watch(state, () =&gt; console.log('changed!'), { deep: true })
+
+state.info.name = 'Anthony Fu'
+// changed!
+</code></pre>
+<p>To implement this feature, you need to collect the <code>track()</code> events on every nested property. We can achieve that with a <code>traverse</code> function.</p>
+<pre><code class="language-ts">function traverse(value, seen = new Set()) {
+  if (!isObject(value) || seen.has(value))
+    return value
+
+  seen.add(value) // prevent circular reference
+  if (isArray(value)) {
+    for (let i = 0; i &lt; value.length; i++)
+      traverse(value[i], seen)
+  }
+  else {
+    for (const key of Object.keys(value))
+      traverse(value[key], seen)
+  }
+  return value
+}
+
+function watch(source, fn, { deep, lazy = true }) {
+  let getter = isRef(source)
+    ? () =&gt; source.value
+    : isReactive(source)
+      ? () =&gt; source
+      : source
+
+  if (deep)
+    getter = () =&gt; traverse(getter())
+
+  const runner = effect(getter, {
+    lazy,
+    scheduler: fn
+  })
+
+  return () =&gt; stop(runner)
+}
+</code></pre>
+<p>Done! The thing left to do is to polish, adding overloads to make it more flexible, add more options to get better control, and handle some edge cases. Then you should get yourself a good start for using a custom <code>watch</code>!</p>
+<h2>Lifecycles</h2>
+<p>In Vue, <code>computed</code> and <code>watch</code> will automatically bind their <code>effect</code> runner to the current component instance. When the component get unmounted, the effects bond to it will be auto disposed. More specially, you can read <a href="https://github.com/vuejs/core/blob/985bd2bcb5fd8bccd1c15c8c5d89a6919fd73922/packages/runtime-core/src/apiWatch.ts#L294">the source code here</a>.</p>
+<p>Since we don't have an instance, if you want to stop those effects, you have to do them manually. When you have multiple effects in used, to stop them together, you have to manually collect them together. One easier way is to mock similar lifecycles like Vue. This requires some amount of works, I will explain that in another blog post. Please keep tuned.</p>
+<h2>Take Away</h2>
+<p>Thanks for reading! And hope it is helpful for you to understand and better play with the Vue reactivity system. If you want to have the <code>watch</code> outside of Vue, I made one for you (much more robust than the examples above for sure).</p>
+<pre class="block language-bash">
+npm i <a href='https://github.com/antfu/vue-reactivity-watch' target='_blank'>@vue-reactivity/watch</a>
+</pre>
+<p>Have fun ;P</p>
 ]]></content>
         <author>
             <name>mushviva</name>
