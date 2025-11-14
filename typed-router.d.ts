@@ -27,7 +27,11 @@ declare module 'vue-router/auto-routes' {
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
     '/posts/evolution-of-shiki-v1': RouteRecordInfo<'/posts/evolution-of-shiki-v1', '/posts/evolution-of-shiki-v1', Record<never, never>, Record<never, never>>,
     '/posts/first-blog': RouteRecordInfo<'/posts/first-blog', '/posts/first-blog', Record<never, never>, Record<never, never>>,
+    '/posts/mental-health-oss-zh': RouteRecordInfo<'/posts/mental-health-oss-zh', '/posts/mental-health-oss-zh', Record<never, never>, Record<never, never>>,
     '/posts/test': RouteRecordInfo<'/posts/test', '/posts/test', Record<never, never>, Record<never, never>>,
+    '/posts/watch-with-reactivity': RouteRecordInfo<'/posts/watch-with-reactivity', '/posts/watch-with-reactivity', Record<never, never>, Record<never, never>>,
+    '/posts/weekly_review_82': RouteRecordInfo<'/posts/weekly_review_82', '/posts/weekly_review_82', Record<never, never>, Record<never, never>>,
+    '/posts/weekly_review_94': RouteRecordInfo<'/posts/weekly_review_94', '/posts/weekly_review_94', Record<never, never>, Record<never, never>>,
     '/use': RouteRecordInfo<'/use', '/use', Record<never, never>, Record<never, never>>,
   }
 
@@ -78,8 +82,24 @@ declare module 'vue-router/auto-routes' {
       routes: '/posts/first-blog'
       views: never
     }
+    'pages/posts/mental-health-oss-zh.md': {
+      routes: '/posts/mental-health-oss-zh'
+      views: never
+    }
     'pages/posts/test.md': {
       routes: '/posts/test'
+      views: never
+    }
+    'pages/posts/watch-with-reactivity.md': {
+      routes: '/posts/watch-with-reactivity'
+      views: never
+    }
+    'pages/posts/weekly_review_82.md': {
+      routes: '/posts/weekly_review_82'
+      views: never
+    }
+    'pages/posts/weekly_review_94.md': {
+      routes: '/posts/weekly_review_94'
       views: never
     }
     'pages/use.md': {

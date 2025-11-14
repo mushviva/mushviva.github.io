@@ -44,7 +44,8 @@ async function buildBlogRSS() {
           const raw = await fs.readFile(i, 'utf-8')
           const { data, content } = matter(raw)
 
-          if (data.lang !== 'en')
+          // Skip notes - check if type is explicitly "note" or if it's from notes directory
+          if (data.type === 'note')
             return
 
           const html = markdown.render(content)
