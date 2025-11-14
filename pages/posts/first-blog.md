@@ -1,6 +1,7 @@
 ---
 title: 探索 Vue 3 的 Composition API
-date: 2025-11-13
+date: 2025-11-13T12:00:00Z
+lang: zh
 tags: [Vue, JavaScript, 前端]
 description: 一篇关于如何使用 Vue 3 Composition API 提升代码可维护性的文章。
 ---
