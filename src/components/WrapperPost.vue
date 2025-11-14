@@ -112,7 +112,7 @@ function initRemark42() {
     return
 
   const remark_config = {
-    host: 'https://remark42-k9m3.zeabur.app',
+    host: 'https://remark.guavaswing.com',
     site_id: 'guavaswing',
     components: ['embed', 'counter'],
     max_shown_comments: 20,
