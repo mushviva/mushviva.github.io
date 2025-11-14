@@ -112,8 +112,8 @@ function initRemark42() {
     return
 
   const remark_config = {
-    host: 'https://mushviva.zeabur.app',
-    site_id: 'guavaswing.com',
+    host: 'https://remark42-k9m3.zeabur.app',
+    site_id: 'guavaswing',
     components: ['embed', 'counter'],
     max_shown_comments: 20,
     simple_view: true,
@@ -261,7 +261,6 @@ const ArtComponent = computed(() => {
   }
   return undefined
 })
-
 </script>
 
 <template>
@@ -324,7 +323,6 @@ const ArtComponent = computed(() => {
         </div>
         <div id="remark42" />
       </div>
-
     </div>
     <div v-if="route.path !== '/'" class="prose m-auto mt-8 mb-8 slide-enter animate-delay-500 print:hidden">
       <span font-mono op50>> </span>
