@@ -112,8 +112,8 @@ function initRemark42() {
     return
 
   const remark_config = {
-    host: 'https://remark.guavaswing.com',
-    site_id: 'guavaswing',
+    host: 'https://remark42.guavaswing.com',
+    site_id: 'guavaswing.com',
     components: ['embed', 'counter'],
     max_shown_comments: 20,
     simple_view: true,
