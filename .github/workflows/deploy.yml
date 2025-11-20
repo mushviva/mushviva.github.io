@@ -14,20 +14,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js
+      - name: Setup Node.js and pnpm
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm
-          cache-dependency-path: pnpm-lock.yaml # 明确指定缓存依赖文件
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 8 # 明确安装 pnpm v8 或更高版本
-          run_install: false # 避免重复安装依赖
+          cache: pnpm # 这一行会告诉 action-setup-node 自动安装 pnpm 并配置 PATH
 
       - name: Install dependencies
+        # 此时 pnpm 已经可用
         run: pnpm install --frozen-lockfile
 
       - name: Build
@@ -37,5 +31,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist # 指定要部署的目录
-          publish_branch: gh-pages # 部署到 gh-pages 分支
+          publish_dir: ./dist
+          publish_branch: gh-pages
