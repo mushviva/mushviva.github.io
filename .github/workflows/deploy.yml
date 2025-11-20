@@ -14,14 +14,20 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js and pnpm
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm # 这一行会告诉 action-setup-node 自动安装 pnpm 并配置 PATH
+          cache: pnpm # 保持缓存设置
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8 # 明确安装 pnpm v8
+          run_install: false # 仅安装 pnpm 工具本身
 
       - name: Install dependencies
-        # 此时 pnpm 已经可用
+        # 此时 pnpm 应该已经添加到 PATH
         run: pnpm install --frozen-lockfile
 
       - name: Build
