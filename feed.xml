@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>mushviva</title>
         <link>https://guavaswing.com/</link>
         <description>mushviva' Blog</description>
-        <lastBuildDate>Thu, 20 Nov 2025 08:29:46 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 20 Nov 2025 08:43:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,40 +14,5 @@
         </image>
         <copyright>CC BY-NC-SA 4.0 2025 © mushviva</copyright>
         <atom:link href="https://guavaswing.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <item>
-            <title><![CDATA[探索 Vue 3 的 Composition API]]></title>
-            <link>https://guavaswing.com/posts/first-blog</link>
-            <guid isPermaLink="true">https://guavaswing.com/posts/first-blog</guid>
-            <pubDate>Thu, 13 Nov 2025 13:00:00 GMT</pubDate>
-            <description><![CDATA[一篇关于如何使用 Vue 3 Composition API 提升代码可维护性的文章。]]></description>
-            <content:encoded><![CDATA[<p>Vue 3 的 Composition API 带来了更灵活、更强大的组件逻辑组织方式。</p>
-<h2>为什么选择 Composition API？</h2>
-<p>在大型应用中，Options API 可能会导致组件逻辑分散在不同的选项（data, methods, computed）中，难以阅读和维护。</p>
-<p>Composition API 通过 <code>setup</code> 函数，让我们能够将相关的逻辑代码组织在一起。</p>
-<pre><code class="language-vue">&lt;script setup&gt;
-import { computed, ref } from 'vue'
-
-// 计数器逻辑
-const count = ref(0)
-function increment() {
-  count.value++
-}
-
-// 计算属性
-const doubleCount = computed(() =&gt; count.value * 2)
-&lt;/script&gt;
-
-&lt;template&gt;
-  &lt;div&gt;
-    &lt;button @click=&quot;increment&quot;&gt;
-      Count: {{ count }}
-    &lt;/button&gt;
-    &lt;p&gt;Double: {{ doubleCount }}&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
-</code></pre>
-]]></content:encoded>
-            <author>gthefd@gmail.com (mushviva)</author>
-        </item>
     </channel>
 </rss>

@@ -9,17 +9,5 @@
         "name": "mushviva",
         "url": "https://guavaswing.com"
     },
-    "items": [
-        {
-            "content_html": "<p>Vue 3 的 Composition API 带来了更灵活、更强大的组件逻辑组织方式。</p>\n<h2>为什么选择 Composition API？</h2>\n<p>在大型应用中，Options API 可能会导致组件逻辑分散在不同的选项（data, methods, computed）中，难以阅读和维护。</p>\n<p>Composition API 通过 <code>setup</code> 函数，让我们能够将相关的逻辑代码组织在一起。</p>\n<pre><code class=\"language-vue\">&lt;script setup&gt;\nimport { computed, ref } from 'vue'\n\n// 计数器逻辑\nconst count = ref(0)\nfunction increment() {\n  count.value++\n}\n\n// 计算属性\nconst doubleCount = computed(() =&gt; count.value * 2)\n&lt;/script&gt;\n\n&lt;template&gt;\n  &lt;div&gt;\n    &lt;button @click=&quot;increment&quot;&gt;\n      Count: {{ count }}\n    &lt;/button&gt;\n    &lt;p&gt;Double: {{ doubleCount }}&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/template&gt;\n</code></pre>\n",
-            "url": "https://guavaswing.com/posts/first-blog",
-            "title": "探索 Vue 3 的 Composition API",
-            "summary": "一篇关于如何使用 Vue 3 Composition API 提升代码可维护性的文章。",
-            "date_modified": "2025-11-13T13:00:00.000Z",
-            "author": {
-                "name": "mushviva",
-                "url": "https://guavaswing.com"
-            }
-        }
-    ]
+    "items": []
 }
