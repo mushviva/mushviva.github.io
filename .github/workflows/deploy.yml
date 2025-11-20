@@ -20,7 +20,7 @@ jobs:
           node-version: 20
           cache: pnpm # 保持缓存设置
 
-      - name: Install pnpm
+      - name: Install pnpm # 关键步骤：确保 pnpm 被添加到 PATH
         uses: pnpm/action-setup@v3
         with:
           version: 8 # 明确安装 pnpm v8
@@ -33,6 +33,7 @@ jobs:
       - name: Build
         run: pnpm run build
 
+      # ... Deploy 步骤
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
