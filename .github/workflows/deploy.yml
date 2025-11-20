@@ -27,8 +27,8 @@ jobs:
           run_install: false # 仅安装 pnpm 工具本身
 
       - name: Install dependencies
-        # 此时 pnpm 应该已经添加到 PATH
-        run: pnpm install --frozen-lockfile
+        # 强制使用 npm 安装 pnpm，然后执行 pnpm install
+        run: npm install -g pnpm && pnpm install --frozen-lockfile
 
       - name: Build
         run: pnpm run build
