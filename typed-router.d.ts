@@ -24,6 +24,7 @@ declare module 'vue-router/auto-routes' {
     '/media': RouteRecordInfo<'/media', '/media', Record<never, never>, Record<never, never>>,
     '/notes': RouteRecordInfo<'/notes', '/notes', Record<never, never>, Record<never, never>>,
     '/photos': RouteRecordInfo<'/photos', '/photos', Record<never, never>, Record<never, never>>,
+    '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
     '/posts/first-blog': RouteRecordInfo<'/posts/first-blog', '/posts/first-blog', Record<never, never>, Record<never, never>>,
     '/use': RouteRecordInfo<'/use', '/use', Record<never, never>, Record<never, never>>,
   }
@@ -61,6 +62,10 @@ declare module 'vue-router/auto-routes' {
     }
     'pages/photos.md': {
       routes: '/photos'
+      views: never
+    }
+    'pages/posts/index.md': {
+      routes: '/posts/'
       views: never
     }
     'pages/posts/first-blog.md': {
